@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Knewave&family=Noto+Sans+Hebrew:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+@font-face {
+    font-family: 'Anton';
+    src: url('../font/Anton-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../font/DMSans_18pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../font/Recoleta-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM PLex Mono';
+    src: url(../font/IBMPlexMono-Light.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Hebrew';
+    src: url(../font/NotoSansHebrew-Bold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+*, html{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body{
+    font-family: "Noto Sans Hebrew", sans-serif;
+}
+
+header{
+    font-family: 'Recoleta', serif;
+    width: 100%;
+    display: flex;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colom1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    border: .5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-bottom: .5px solid black;
+    height: 100%;
+}
+
+.brand h1{
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.kata-kata{
+    font-family: 'IBM Plex Mono', sans-serif;
+    border: .5px solid black;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10%;
+    height: 100%;
+}
+
+.kata-kata p{
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.colom2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid black;
+    background-color: #9D6638;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.card-navigation:hover{
+    background-color: black;
+}
+
+.card-navigation a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tentang-nav{
+    border-left: none;
+}
+
+.menu-nav{
+    border-left: none;
+}
+
+.contact-nav{
+    border-left: none;
+}
+
+.home{
+    font-family: 'Noto Sans Hebrew', serif;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    
+}
