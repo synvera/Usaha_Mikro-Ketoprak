@@ -21,18 +21,18 @@
             </div>
         </div>
         <div class="colom2">
-            <div class="card-navigation home-nav">
-                <a href="#home">Home</a>
-            </div>
-            <div class="card-navigation tentang-nav">
-                <a href="#tentang">About</a>
-            </div>
-            <div class="card-navigation menu-nav">
-                <a href="#menu">Menus</a>
-            </div>
-            <div class="card-navigation contact-nav">
-                <a href="#contact">Contact</a>
-            </div>
+            <a href="#home" class="card-navigation home-nav">
+                Home
+            </a>
+            <a href="#tentang" class="card-navigation tentang-nav">
+                About
+            </a>
+            <a href="#menu" class="card-navigation menu-nav">
+                Menus
+            </a>
+            <a href="#contact" class="card-navigation contact-nav">
+                Contact
+            </a>
         </div>
     </nav>
 </header>
@@ -61,16 +61,35 @@
                     <p>we set out to prove that authentic Indonesian flavors can seamlessly blend with modern lifestyle. every plate we serve is more than just a satisfying meal—it’s a story of warmth and togetherness made accessible to everyone without breaking the bank.</p>
                 </div>
             </div>
-        </div>
-        <div class="tentan-right">
-            <div class="right1">
-                <p>we are a collective of food enthusiasts united by a passion for authentic ketoprak and a vibrant hangout culture</p>
+            <div class="brand-left">
+                <img src="/image/Desain tanpa judul (6).png" alt="">
             </div>
-            <div class="right2">
-                <p>we work for everyone for whom ketoprak is not just a quick meal, but a source of comfort and joy. our dedication to serving five-star taste at pocket-friendly prices inspires us every day</p>
+        </div>
+        <div class="tentang-right">
+            <div class="right1">
+                <p>We started with a humble wooden cart, a stone pestle, and an uncompromising love for authentic street flavor. Back when a warm plate cost just a few hundred rupiah, our mission was simple: to serve genuine comfort food that brings people together every single day.</p>
+                <h1>Est. 1980s</h1>
+                <p>In an era where honest food was priced for everyone, our journey began with fresh tofu, vermicelli, and rich crushed peanuts prepared right on the street corner. Times have changed, but our commitment never wavered. Today, we proudly serve that same legendary recipe with modern hygiene and the exact classic taste you remember.</p>
             </div>
         </div>
     </div>
 </section>
+<section id="menu" class="menu"></section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis({
+    duration: 1.3,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
 </body>
 </html>

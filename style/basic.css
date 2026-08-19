@@ -41,10 +41,14 @@
     font-style: normal;
 }
 
-*, html{
+html {
+    scroll-behavior: smooth;
+}
+
+* {
     margin: 0;
     padding: 0;
-    background-color: white;
+    box-sizing: border-box;
 }
 
 body{
@@ -125,6 +129,8 @@ nav{
 }
 
 .card-navigation{
+    text-decoration: none;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,13 +144,6 @@ nav{
     background-color: black;
 }
 
-.card-navigation a{
-    background-color: transparent;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-}
 
 .tentang-nav{
     border-left: none;
@@ -224,7 +223,7 @@ nav{
 .home-img img{
     background-color: transparent;
     margin-top: -125px;
-    width: 900px;
+    width: 90%;
 }
 
 .tentang{
@@ -262,20 +261,45 @@ nav{
 }
 
 .left1 p{
-    
     font-size: 16px;
 }
 
-.tentan-right{
-    margin-top: 20px;
-    width: 50%;
+.brand-left {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 50px;
 }
 
-.right1, .right2{
+.brand-left img{
+    width: 60%;
+}
+
+.tentang-right{
+    margin-right: 150px;
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+}
+
+.right1{    
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "IBM PLex Mono", sans-serif;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.right1 p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.right1 h1{
+    font-family: "Recoleta", sans-serif;
+    letter-spacing: 2px;    
+    font-size: 80px;
+    font-weight: 900;
 }
