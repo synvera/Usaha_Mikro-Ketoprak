@@ -335,6 +335,7 @@ nav{
 }
 
 .image-menu{
+    width: 100%;
     background: linear-gradient(#F7F1DE, #9D6638, #4E220F);
     display: flex;
     justify-content: space-between;
@@ -391,4 +392,640 @@ nav{
 
 .lokasi iframe{
     width: 100%;
+}
+
+/* Laptop L - 1440px */
+@media screen and (max-width: 1440px) {
+    .tentang{
+        height: auto;
+        padding: 80px 0;
+    }
+ 
+    .tentang-left h1{
+        font-size: 160px;
+    }
+ 
+    .right1{
+        justify-content: flex-start;
+        gap: 50px;
+    }
+ 
+    .right1 h1{
+        font-size: 65px;
+    }
+ 
+    /* --- signature menus: gambar dikecilin biar ga tembus keluar layar --- */
+    .menu{
+        height: auto;
+    }
+ 
+    .image-menu{
+        justify-content: space-evenly;
+        padding: 50px 0;
+    }
+ 
+    .image-menu img{
+        width: 420px;
+    }
+ 
+    .image-menu .paragraf{
+        position: static;
+        width: auto;
+        gap: 100px;
+    }
+
+    .foto1{
+        margin-left: -100px;
+    }
+
+    .foto2{
+        margin-right: -100px;
+    }
+ 
+    .kosong{
+        margin-top: -2px;
+        height: 200px;
+    }
+ 
+    .contact{
+        margin-top: 100px;
+    }
+}
+
+/* Laptop - 1024px */
+@media screen and (max-width: 1024px) {
+    /* --- header --- */
+    .brand h1{
+        font-size: 34px;
+    }
+
+    /* --- home: lepas dari height:100vh biar ga ada jarak kosong gede --- */
+    .home{
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .text-content h1{
+        font-size: 42px;
+    }
+
+    .text-content a{
+        padding: 15px 60px;
+    }
+
+    .home-img img{
+        margin-top: 0;
+    }
+
+    /* --- tentang / our story: sama, height auto + kolom teks ditumpuk --- */
+    .tentang{
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .tentang-left h1{
+        font-size: 100px;
+        margin-bottom: 30px;
+    }
+
+    .left-container{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .left1, .left2{
+        width: 100%;
+    }
+
+    .tentang-right{
+        margin-right: 40px;
+    }
+
+    .right1{
+        padding: 0 0 0 20px;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .right1 h1{
+        font-size: 50px;
+    }
+
+    .right1 p{
+        font-size: 16px;
+    }
+
+    /* --- menu: height auto, gambar dikecilin biar ga overflow keluar layar --- */
+    .menu{
+        height: auto;
+    }
+
+    .menu-head h1{
+        font-size: 60px;
+    }
+
+    .menu-head p{
+        width: 70%;
+    }
+
+    .image-menu{
+        justify-content: space-evenly;
+        padding: 40px 0;
+    }
+
+    .image-menu img{
+        width: 300px;
+    }
+
+    .image-menu .paragraf{
+        position: static;
+        width: auto;
+        gap: 50px;
+    }
+
+    .foto1{
+        margin-left: -60px;
+    }
+
+    .foto2{
+        margin-right: -60px;
+    }
+
+    .kosong{
+        margin-top: -2px;
+        height: 150px;
+    }
+
+    .contact{
+        margin-top: 2cqmin;
+    }
+
+    .card-info h1{
+        font-size: 32px;
+    }
+}
+
+/* Tablet - 768px */
+@media screen and (max-width: 768px) {
+    .colom1{
+        height: 65px;
+    }
+
+    .logo{
+        width: 15%;
+    }
+
+    .brand{
+        width: 70%;
+    }
+
+    .brand h1{
+        font-size: 26px;
+    }
+
+    .kata-kata{
+        width: 15%;
+    }
+
+    .kata-kata p{
+        font-size: 10px;
+    }
+
+    .colom2{
+        height: 35px;
+    }
+
+    .card-navigation{
+        font-size: 12px;
+    }
+
+    .home{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-img{
+        display: none;
+    }
+
+    .home-text{
+        width: 90%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-content{
+        width: 100%;
+    }
+
+    .text-content h1{
+        font-size: 34px;
+    }
+
+    .text-content a{
+        padding: 12px 40px;
+    }
+
+    .home-img{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .home-img img{
+        margin-top: 0;
+        width: 70%;
+    }
+
+    .tentang{
+        height: 100vh;
+        align-items: center;
+    }
+
+    .tentang-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tentang-left{
+        width: 90%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .tentang-left h1{
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    .left-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left1, .left2{
+        width: 100%;
+    }
+
+    .brand-left{
+        justify-content: center;
+    }
+
+    .tentang-right{
+        margin-right: 0;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .right1{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .right1 h1{
+        font-size: 40px;
+    }
+
+    .menu{
+        height: auto;
+    }
+
+    .menu-head h1{
+        font-size: 44px;
+    }
+
+    .menu-head p{
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .image-menu{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .foto1{
+        margin-left: -70px;
+    }
+
+    .foto2{
+        margin-right: -70px;
+    }
+
+    .image-menu img{
+        width: 90%;
+    }
+
+    .image-menu .paragraf{
+        position: static;
+        width: 90%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .kosong{
+        height: 200px;
+        margin-top: -2px;
+    }
+
+    .contact{
+        margin-top: 2px;
+    }
+}
+
+/* Mobile L - 425px */
+@media screen and (max-width: 425px) {
+    .colom1{
+        height: 55px;
+    }
+
+    .home{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-img{
+        display: none;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .brand{
+        width: 60%;
+    }
+
+    .tentang{
+        height: 100vh;
+        align-items: center;
+    }
+
+    .brand h1{
+        font-size: 18px;
+    }
+
+    .brand-left{
+        display: none;
+    }
+
+    .kata-kata{
+        width: 20%;
+    }
+
+    .kata-kata p{
+        font-size: 8px;
+    }
+
+    .left-container p{
+        font-weight: 500;
+    }
+
+    .right1 h1{
+        padding: 20px;
+    }
+
+    .text-content h6{
+        font-size: 13px;
+    }
+
+    .text-content h1{
+        font-size: 26px;
+    }
+
+    .text-content p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .text-content a{
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .home-img img{
+        width: 85%;
+    }
+
+    .tentang-left h1{
+        font-size: 44px;
+    }
+
+    .left1 p, .left2 p{
+        font-size: 13px;
+    }
+
+    .right1 h1{
+        font-size: 28px;
+    }
+
+    .right1 p{
+        font-size: 13px;
+    }
+
+    .menu-head h1{
+        font-size: 30px;
+    }
+
+    .menu-head p{
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .paragraf p{
+        font-size: 15px;
+    }
+
+    .foto1{
+        margin-left: -50px;
+    }
+
+    .foto2{
+        margin-right: -50px;
+    }
+
+    .kosong{
+        margin-top: -2px;
+        height: 150px;
+    }
+
+    .contact{
+        margin-top: -5px;
+    }
+
+    .card-info h1{
+        font-size: 24px;
+    }
+}
+
+/* Mobile M - 375px */
+@media screen and (max-width: 375px) {
+    .brand h1{
+        font-size: 16px;
+    }
+
+    .home{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-content h1{
+        font-size: 22px;
+    }
+
+    .text-content a{
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+
+    .tentang-left h1{
+        font-size: 38px;
+    }
+
+    .home-img{
+        display: none;
+    }
+
+    .brand-left{
+        display: none;
+    }
+
+    .tentang{
+        gap: 50px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-container p{
+        font-weight: 500;
+    }
+
+    .right1 h1{
+        padding: 20px 0;
+        font-size: 24px;
+    }
+
+    .menu-head h1{
+        font-size: 26px;
+    }
+
+    .foto1{
+        margin-left: -40px;
+    }
+
+    .foto2{
+        margin-right: -40px;
+    }
+
+    .kosong{
+        margin-top: -5px;
+    }
+
+    .contact{
+        margin-top: -10px;
+    }
+}
+
+/* Mobile S - 320px */
+@media screen and (max-width: 320px) {
+    .logo img{
+        width: auto;
+        height: 80%;
+    }
+
+    .kata-kata{
+        display: none;
+    }
+
+    .brand{
+        width: 80%;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .home-img{
+        display: none;
+    }
+
+    .text-content h1{
+        font-size: 19px;
+    }
+
+    .text-content a{
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .tentang-left h1{
+        font-size: 32px;
+    }
+
+    .menu{
+        margin: 0;
+        padding: 0;
+    }
+
+    .tentang{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        height: 100vh;
+    }
+
+    .left-container{
+        font-weight: 500;
+    }
+
+    .brand-left{
+        display: none;
+    }
+
+    .image-menu{
+        width: 100%;
+    }
+
+    .foto1{
+        margin-left: -35px;
+    }
+
+    .foto2{
+        margin-right: -35px;
+    }
+    .right1 h1{
+        font-size: 20px;
+    }
+
+    .menu-head h1{
+        font-size: 22px;
+    }
+
+    .contact{
+        margin-top: -10px;
+    }
+
+    .card-info{
+        display: flex;
+        align-items: center;
+    }
+
+    .card-info h1{
+        font-size: 20px;
+    }
+    
+    .card-info p{
+        font-size: 12px;
+    }
 }
